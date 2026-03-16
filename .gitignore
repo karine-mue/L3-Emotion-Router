@@ -1,0 +1,26 @@
+# === Local Machine Learning Assets ===
+# 巨大なモデルファイル（GGUF）はLFSを使わない限りGitHubには上げない
+*.gguf
+
+# === llama.cpp Build Artifacts ===
+# ビルド済みのバイナリや中間生成物
+llama.cpp/
+build/
+bin/
+*.o
+*.a
+*.so
+
+# === Script Specifics ===
+# 実行時に生成される一時ファイル（mktemp等）
+tmp.*
+*.tmp
+
+# === Environment & Secrets ===
+# APIキーや環境設定ファイル（もし作成した場合）
+.env
+.bashrc_backup
+
+# === OS Specifics ===
+.DS_Store
+Thumbs.db
